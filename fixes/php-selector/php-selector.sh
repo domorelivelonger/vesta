@@ -213,6 +213,23 @@ tput sgr0
 	phpinstall71
 	phpinstall72
 echo "################################"
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /etc/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /etc/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /etc/php.ini
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /opt/remi/php55/root/etc/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /opt/remi/php55/root/etc/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /opt/remi/php55/root/etc/php.ini
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /opt/remi/php54/root/etc/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /opt/remi/php54/root/etc/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /opt/remi/php54/root/etc/php.ini
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /etc/opt/remi/php70/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /etc/opt/remi/php70/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /etc/opt/remi/php70/php.ini
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /etc/opt/remi/php72/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /etc/opt/remi/php72/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /etc/opt/remi/php72/php.ini
+systemctl restart httpd
+
 echo "Aditional PHP versión installed!"
 echo "More info on webxdata.com or vestacp forums."
 fi
