@@ -7,3 +7,6 @@ wget https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/
 2. Install monit
 
 wget https://raw.githubusercontent.com/webxdata/vesta/master/fixes/monit/monit.sh && bash monit.sh
+
+3. fix for backup script
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/bin/v-backup-user > /usr/local/vesta/bin/v-backup-user
