@@ -68,7 +68,7 @@ echo "Installing PHP 7.1"
 yum install -y php71-php-imap php71-php-process php71-php-pspell php71-php-xml php71-php-xmlrpc php71-php-pdo php71-php-ldap php71-php-pecl-zip php701-php-common php71-php php71-php-mcrypt php71-php-gmp php71-php-mysqlnd php71-php-mbstring php71-php-gd php71-php-tidy php71-php-pecl-memcache --enablerepo=remi  >> $log
 echo "......."
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php71-centos.sh > /usr/local/vesta/data/templates/web/httpd/php71.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php71-centos.sh > /usr/local/vesta/data/templates/web/httpd/php71.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php71.stpl
 
@@ -95,7 +95,7 @@ echo "Installing PHP 7.1"
 yum install -y php72-php-imap php72-php-process php72-php-pspell php72-php-xml php72-php-xmlrpc php72-php-pdo php72-php-ldap php72-php-pecl-zip php701-php-common php72-php php72-php-mcrypt php72-php-gmp php72-php-mysqlnd php72-php-mbstring php72-php-gd php72-php-tidy php72-php-pecl-memcache --enablerepo=remi  >> $log
 echo "......."
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php72-centos.sh > /usr/local/vesta/data/templates/web/httpd/php72.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php72-centos.sh > /usr/local/vesta/data/templates/web/httpd/php72.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php72.stpl
 
@@ -122,7 +122,7 @@ echo "Instaling PHP 5.6"
 yum install -y php56-php-imap php56-php-process php56-php-pspell php56-php-xml php56-php-xmlrpc php56-php-pdo php56-php-ldap php56-php-pecl-zip php56-php-common php56-php php56-php-mcrypt php56-php-mysqlnd php56-php-gmp php56-php-mbstring php56-php-gd php56-php-tidy php56-php-pecl-memcache --enablerepo=remi  >> $log
 echo "......."
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php56-centos.sh > /usr/local/vesta/data/templates/web/httpd/php56.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php56-centos.sh > /usr/local/vesta/data/templates/web/httpd/php56.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php56.stpl
 
@@ -150,7 +150,7 @@ echo "Instaling PHP 5.5"
 yum install -y php55-php-imap php55-php-process php55-php-pspell php55-php-xml php55-php-xmlrpc php55-php-pdo php55-php-ldap php55-php-pecl-zip php55-php-common php55-php php55-php-mcrypt php55-php-mysqlnd php55-php-gmp php55-php-mbstring php55-php-gd php55-php-tidy php55-php-pecl-memcache --enablerepo=remi  >> $log
 echo "......."
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php55-centos.sh > /usr/local/vesta/data/templates/web/httpd/php55.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php55-centos.sh > /usr/local/vesta/data/templates/web/httpd/php55.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php55.stpl
 
@@ -177,7 +177,7 @@ echo "Instaling PHP 5.4"
 yum install -y  php54-php-pspell php54-php-process php54-php-imap php54-php-xml php54-php-xmlrpc php54-php-pdo php54-php-ldap php54-php-pecl-zip php54-php-common php54-php-gmp php54-php php54-php-mcrypt php54-php-mysqlnd php54-php-mbstring php54-php-gd php54-php-tidy php54-php-pecl-memcache --enablerepo=remi  >> $log
 echo "........"
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php54-centos.sh > /usr/local/vesta/data/templates/web/httpd/php54.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php54-centos.sh > /usr/local/vesta/data/templates/web/httpd/php54.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php54.stpl
 
