@@ -925,5 +925,5 @@ fi
 
 # Logging
 log_event "$OK" "$ARGUMENTS"
-
+rm -rf /backup/tmp*
 exit
