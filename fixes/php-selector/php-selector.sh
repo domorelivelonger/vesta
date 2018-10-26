@@ -9,6 +9,12 @@
 # GNU General Public License for more details. http://www.gnu.org/licenses/
 sistema=$(grep -o "[0-9]" /etc/redhat-release |head -n1)
 log=/var/log/wephp.log
+
+cp /etc/httpd/conf.d/fcgid.conf /opt/fcgid.conf2
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/fcgid.conf > /etc/httpd/conf.d/fcgid.conf
+systemctl restart httpd
+curl -O https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/phpfcgid.sh > /usr/local/vesta/data/templates/web/httpd/phpfcgid.sh
+
 if [ ! -e /etc/yum.repos.d/remi.repo ]; then
 echo "I not found remi repo, stop install... "
 exit 2
