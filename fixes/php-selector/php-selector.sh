@@ -36,7 +36,7 @@ echo "Installing PHP 7.0"
 yum install -y php70-php-imap php70-php-process php70-php-pspell php70-php-xml php70-php-xmlrpc php70-php-pdo php70-php-ldap php70-php-pecl-zip php70-php-common php70-php php70-php-mcrypt php70-php-gmp php70-php-mysqlnd php70-php-mbstring php70-php-gd php70-php-tidy php70-php-pecl-memcache --enablerepo=remi  >> $sklog
 echo "......."
 
-curl -s https://raw.githubusercontent.com/webxdata/vestacp/master/fixes/php-selector/php70-centos.sh > /usr/local/vesta/data/templates/web/httpd/php70.sh
+curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php70-centos.sh > /usr/local/vesta/data/templates/web/httpd/php70.sh
 
 ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/php70.stpl
 
