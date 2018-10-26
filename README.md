@@ -3,3 +3,7 @@
 
 
 wget https://raw.githubusercontent.com/webxdata/vesta/master/fixes/php-selector/php-selector.sh && bash php-selector.sh
+
+2. Install monit
+
+install
