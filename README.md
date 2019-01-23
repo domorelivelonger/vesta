@@ -10,5 +10,5 @@ wget https://raw.githubusercontent.com/webxdata/vesta/master/fixes/monit/monit.s
 
 3. fix for backup script
 curl -s https://raw.githubusercontent.com/webxdata/vesta/master/fixes/bin/v-backup-user > /usr/local/vesta/bin/v-backup-user
-4. Installation pptpd vpn server on server with VestaCP panel
+4. Installation pptpd vpn server on server with VestaCP panel on Centos7
 wget https://raw.githubusercontent.com/webxdata/vesta/master/pptpd-vesta.sh && bash pptpd-vesta.sh
