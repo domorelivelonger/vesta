@@ -260,6 +260,23 @@ sed -i 's/; max_input_vars = 10000/max_input_vars = 10000/' /etc/opt/remi/php72/
 sed -i 's/max_input_vars = 1000/max_input_vars = 10000/' /etc/opt/remi/php72/php.ini
 sed -i 's/max_file_uploads = 20/max_file_uploads = 200/' /etc/opt/remi/php72/php.ini
 
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /etc/opt/remi/php73/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /etc/opt/remi/php73/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /etc/opt/remi/php73/php.ini
+sed -i 's/max_execution_time = 30/max_execution_time = 120/' /etc/opt/remi/php73/php.ini
+sed -i 's/max_input_time = 60/max_input_time = 120/' /etc/opt/remi/php73/php.ini
+sed -i 's/; max_input_vars = 10000/max_input_vars = 10000/' /etc/opt/remi/php73/php.ini
+sed -i 's/max_input_vars = 1000/max_input_vars = 10000/' /etc/opt/remi/php73/php.ini
+sed -i 's/max_file_uploads = 20/max_file_uploads = 200/' /etc/opt/remi/php73/php.ini
+
+sed -i 's/\(^upload_max_filesize = \).*/\1200M/' /etc/opt/remi/php74/php.ini
+sed -i 's/\(^memory_limit = \).*/\1320M/' /etc/opt/remi/php74/php.ini
+sed -i 's/\(^post_max_size = \).*/\1200M/' /etc/opt/remi/php74/php.ini
+sed -i 's/max_execution_time = 30/max_execution_time = 120/' /etc/opt/remi/php74/php.ini
+sed -i 's/max_input_time = 60/max_input_time = 120/' /etc/opt/remi/php74/php.ini
+sed -i 's/; max_input_vars = 10000/max_input_vars = 10000/' /etc/opt/remi/php74/php.ini
+sed -i 's/max_input_vars = 1000/max_input_vars = 10000/' /etc/opt/remi/php74/php.ini
+sed -i 's/max_file_uploads = 20/max_file_uploads = 200/' /etc/opt/remi/php74/php.ini
 
 
 systemctl restart httpd
